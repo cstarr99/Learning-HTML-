@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Japanese Learning Survey Form</h1>
+    <p id="description">This is a survey designed to collect information about Japanese Learners.</p>
+    <form id="survey-form">
+      <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name..." required></label><br>
+<label id="email-label">Email <input id="email" type="email" placeholder="Enter your email..." required></label><br>
+      <label id="number-label">Years Studying Japanese <input id="number" type="number" min="0" max="99" placeholder="Enter a number..."><br>
+      <label>
+        How did you hear about this survey?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">TikTok</option>
+        <option value="2">Youtube</option>
+        <option value="3">Instagram</option>
+        </select>
+        </label>
+      <fieldset>
+        <legend>
+          Are you fluent?
+          </legend>
+          <label><input type="radio" id="yes" value="yes" name="response">Yes</label>
+          <label><input type="radio" id="no" value="no" name="response">No</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              What materials do you use to study Japanese?
+              </legend>
+              <label><input id="books" value="books" name="learning-resource" type="checkbox">Books</label>
+
+              <label><input id="movies" value="movies" name="learning-resource" type="checkbox">Movies</label>
+
+              <label><input id="textbooks" value="textbooks" name="learning-resource" type="checkbox">Textbooks</label>
+
+             <br><label><input id="video-games" value="video-games" name="learning-resource" type="checkbox">Video Games</label>
+              </fieldset>
+              <label>Any comments or suggestions?<textarea id="comments" value="comments" placeholder="Type comments here..."></textarea></label>
+               <button type="submit" id="submit" value="submit">Submit</button>
+      </form>
+  </body>
+</html>

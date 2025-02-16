@@ -9,10 +9,10 @@
     <h1 id="title">Japanese Learning Survey Form</h1>
     <p id="description">This is a survey designed to collect information about Japanese Learners.</p>
     <form id="survey-form">
-      <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name..." required></label><br>
-<label id="email-label">Email <input id="email" type="email" placeholder="Enter your email..." required></label><br>
-      <label id="number-label">Years Studying Japanese <input id="number" type="number" min="0" max="99" placeholder="Enter a number..."><br>
-      <label>
+      <div class="inputs"><label id="name-label">Name <input id="name" type="text" placeholder="Enter your name..." required></label></div><br>
+<div class="inputs"><label id="email-label">Email <input id="email" type="email" placeholder="Enter your email..." required></label></div><br>
+      <div class="inputs"><label class="inputs" id="number-label">Years Studying Japanese <input id="number" type="number" min="0" max="99" placeholder="Enter a number..."></label></div><br>
+      </form>
         How did you hear about this survey?
       <select id="dropdown">
         <option value="">(select one)</option>
@@ -31,7 +31,7 @@
           <fieldset>
             <legend>
               What materials do you use to study Japanese?
-              </legend>
+            </legend>
               <label><input id="books" value="books" name="learning-resource" type="checkbox">Books</label>
 
               <label><input id="movies" value="movies" name="learning-resource" type="checkbox">Movies</label>
